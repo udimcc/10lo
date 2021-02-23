@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from typing import List
 import operator
 
-@dataclass
+@dataclass(frozen=True)
 class Book:
 	id : int
 	score : int
