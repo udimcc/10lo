@@ -17,7 +17,7 @@ def get_input(file_path):
 			for book_id in books:
 				actual_books.append(Book(int(book_id), list_of_scored[int(book_id)]))
 			
-			librarys.append(Library(lib, actual_books, int(time), books_per_day))
+			librarys.append(Library(lib, actual_books, int(time), int(books_per_day)))
 
 	return InputCluster(librarys, num_of_books ,days_of_scan)
 
