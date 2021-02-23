@@ -8,4 +8,4 @@ class Book:
 	score : int
 
 def book_sorter(books: List[Book]) -> List[Book]:
-    return sorted(books, key=operator.attrgetter('score'))
+    return sorted(books, key=operator.attrgetter('score'), reverse=True)
