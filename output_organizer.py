@@ -14,7 +14,7 @@ def remove_scanned_books(library_list : List[Library], activated_library_indices
     for index in activated_library_indices:
         updated_result_dict[library_list[index]] = []
         for day in range(days_to_remove):
-            for books_taken in range(updated_result_dict[library_list[index]].books_per_day):
+            for books_taken in range(library_list[index].books_per_day):
                 updated_result_dict[library_list[index]].append(library_list[index].books.pop(0))
     update_result_dict(updated_result_dict)
 
